@@ -1,0 +1,67 @@
+.formCrearOferta{
+    background-color:lightgrey;
+}
+
+.contentForm{
+    margin-top:8%;
+    
+    
+    padding:2%;
+   
+    
+}
+
+.nombreOfertaFormControl{
+    max-width: 70%;
+   
+    padding:5%;
+   
+    
+}
+
+.divCategoria {
+
+    margin-top:10%;
+}
+.divSubcategoria{
+    margin: 10% 0% 10%;
+}
+
+.txtOferta{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    
+}
+
+.vector{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;    
+    background-position: right;
+
+    
+}
+
+input{
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    border-color:transparent;
+    background-color:lightblue;
+
+}
+
+h6{
+    font-size:smaller;
+    font-style: italic;
+    color:lightslategray;
+}
+
+
+
+.divSubcategoriaP{
+    display: none;
+}
+.divSubcategoriaS{
+    display: none;
+}

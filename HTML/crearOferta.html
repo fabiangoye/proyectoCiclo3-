@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/crearOferta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+crossorigin="anonymous"> 
+    <title>Crear Oferta</title>
+</head>
+<body>
+    <div class="container contentForm">
+        <div class="row justify-content-md-center nombreOfertaFormControl shadow p-3 mb-5 bg-body rounded border border.secondary col-lg-6" >
+            <div class="col col-lg-2"></div>
+            <div class="col-md-auto">
+
+                <form action="">
+                    <div class="divOferta">
+                    <label for="txtNombreOferta" class="txtOferta col-md-4 col-sm-9 col-lg-3">Oferta</label>
+                    <input  id="txtNombreOferta" type="text" class="col-md-8 col-sm-3 col-lg-8" placeholder="Nombre">
+                    </div> 
+                    <div class="divCategoria">              
+                    <label for="slCategoria" class="txtOferta col-md-4 col-sm-6 col-lg-3">Categoría</label>
+                    <select id="slCategoria" class="form-select col-md-8 col-sm-3 col-lg-8" >
+                        
+                        <option value="servicio">Servicio</option>
+                        <option value="produncto">Producto</option>
+                    </select>
+
+                    </div>
+                    <div class="divSubcategoriaS" id="SubServicios" >             
+                        <label for="" class="txtOferta col-md-4 col-sm-6 col-lg-3">Subcategoría</label><!--¿Cómo se pone el id en el for del <label> si es un checkbox de varias opciones válidas?-->
+                        <h6>Puede seleccionar varios opciones</h6>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbHogarServ">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Hogar</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbOficinaServ" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Oficina</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbProfesionalesServ" >
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Profesionales</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbTecnologiaServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Tecnología</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbAsesoriaLegalServ">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Asesoría legal</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbAutomovilesServ" >
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Automóviles</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbAcademicosServ" >
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Académicos</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbReparacionesServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Reparaciones y Mantenimiento</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbRecreacionServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Recreación</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbMarketingServ">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Marketing y Diseño</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbConfeccionServ">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Confección</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbMarroquineriaServ" >
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Marroquinería</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbCalzadoServ" >
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Calzado</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbDomiciliosServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Domicilios</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbBellezaServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Belleza</label>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbMascotasServ">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Mascotas</label>
+                          </div>
+                    </div>
+
+
+                    <div class="divSubcategoriaP" id="SubProductos">              
+                        <label for="" class="txtOferta col-md-4 col-sm-6 col-lg-3">Subcategoría</label> 
+                        <h6>Puede seleccionar varios opciones</h6>   
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbHogarProd">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Hogar</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbOficinaProd" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Oficina</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbComestiblesProd" >
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Comestibles</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbDeportesProd">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Deportes</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbRopaProd">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Ropa</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbAutopartesProd" >
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Autopartes</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbTecnologiaProd" >
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Tecnología</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbEntretenimientoProd">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Entretenimiento</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbAutomovilesProd">
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Automóviles</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbMascotasProd">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Mascotas</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="cbBellezaProd">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Belleza</label>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+    
+ 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+ crossorigin="anonymous"></script>
+
+</body>
+</html>
